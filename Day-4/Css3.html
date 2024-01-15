@@ -14,14 +14,66 @@
         .red{
             background-color: yellow;
         }
+
+        /*ID Selector*/
+        #green{
+            background-color: green;
+        }
+        /*Child Selector*/
+        div > p{
+            color: blue;
+            background-color: brown;
+        }
+        /*Descendent Selector*/
+        div p{
+            background-color: blue;
+            color: whitesmoke;
+        }
+
+        /*Universal Selector*/
+        /**{
+            margin: 0;
+            padding: 0;
+        } */
+
+        /*Pseudo Selector*/
+        a:visited{
+            color: yellow;
+        }
+        
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: blue;
+        }
+
+        p:first-child{
+            background-color: aqua;
+        }
+
     </style>
 </head>
 <body>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
     <div>
         I am 1st DIV
     </div>
     <div class="red">
         I am 2nd DIV
+        <p>I am para inside div</p>
+        <article>
+            <p>Not a direct Para </p>
+        </article>
+    </div>
+
+    <div id="green">
+        Third Div
+        <a href="https://www.facebook2.com">Go To facebook2</a>
     </div>
 </body>
 </html>
