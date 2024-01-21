@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        .box:first-child {
+            background-color: red;
+        }
+
+        .box::first-line {
+            color: aqua;
+        }
+        .boxes *{
+            border: 2px solid black;
+            
+        }
+        p, a, .box, [data-color="primary"]{
+            padding-top: 45px;
+        }
+        .box:nth-child(even){
+            background-color: green;
+        }
+        ::selection{
+            color: blue;
+            background-color: black;
+        }
+        .box::first-letter{
+            font-size: 45px;
+        }
+        input::placeholder{
+            background-color: aquamarine;
+            color: black;
+        }
+        button{
+            background-color: rgb(224, 224, 34);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey i am box</div>
+        <div class="box">Hey i am box Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias asperiores
+            perspiciatis voluptates soluta ab facere corporis! Perferendis autem cum perspiciatis rerum.</div>
+        <div class="box">Hey i am box</div>
+        <input type="text" placeholder="Type your comment here">
+        <button>Submit</button>
+    </div>
+</body>
+
+</html>
